@@ -1,0 +1,9 @@
+[[plugins]]
+repo = "posva/vim-vue"
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs' 
