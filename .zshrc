@@ -113,14 +113,4 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 ##############################################
 ################# エイリアス #################
-alias la='ls -a'
-alias ll='ls -l'
-
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-alias mkdir='mkdir -p'
-
-# sudo の後のコマンドでエイリアスを有効にする
-alias sudo='sudo '
+[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias

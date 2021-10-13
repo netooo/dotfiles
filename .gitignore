@@ -4,6 +4,7 @@
 
 ### not ignore ###
 !/.zshrc
+!/.zshrc.alias
 !/.zshenv
 !/.config/
 !/.config/**
