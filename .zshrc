@@ -4,6 +4,8 @@
 export LANG=ja_JP.UTF-8
 export GOPATH=$HOME/go
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export FZF_CTRL_T_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
+export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
 
 # 単語の区切り文字を指定
 autoload -Uz select-word-style
@@ -114,3 +116,4 @@ bindkey '^R' history-incremental-pattern-search-backward
 ##############################################
 ################# エイリアス #################
 [ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
