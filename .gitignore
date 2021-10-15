@@ -5,6 +5,7 @@
 ### not ignore ###
 !/.zshrc
 !/.zshrc.alias
+!/.zshrc.cd
 !/.zshenv
 !/.config/
 !/.config/**
