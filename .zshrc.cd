@@ -17,7 +17,7 @@ function powered_cd_add_log() {
 
 function powered_cd() {
   if [ $# = 0 ]; then
-    cd $(gtac ~/.powered_cd.log | fzf)
+    cd $(tail -r ~/.powered_cd.log | fzf)
   elif [ $# = 1 ]; then
     cd $1
   else
