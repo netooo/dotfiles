@@ -6,7 +6,9 @@
 !/.zshrc
 !/.zshrc.alias
 !/.zshrc.cd
+!/.zshrc.tracking
 !/.zshenv
+
 !/.config/
 !/.config/**
 
