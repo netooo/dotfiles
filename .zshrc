@@ -35,15 +35,23 @@ fpath=(~/.zsh $fpath)
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 autoload -Uz compinit && compinit
 
-# pureの読み込み
-autoload -U promptinit; promptinit
-prompt pure
-
 # プロンプトのオプション表示設定
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM=auto
+
+# プロンプトの表示
+setopt PROMPT_SUBST ; PS1='%F{green}%n %F{white}in %F{cyan}%~%f %F{white}on %F{red}$(__git_ps1 "%s")%f [$(tracking_current)]
+%F{yellow}\$ %f'
+
+function precmd() {
+    if [ -z "$NEW_LINE_BEFORE_PROMPT" ]; then
+        NEW_LINE_BEFORE_PROMPT=1
+    elif [ "$NEW_LINE_BEFORE_PROMPT" -eq 1 ]; then
+        echo ""
+    fi
+}
 
 ## iTerm
 export CLICOLOR=1
