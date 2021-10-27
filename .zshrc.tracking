@@ -1,5 +1,4 @@
-# Install fzf and load this file on your .zshrc, like below
-
+## Find task
 function insert-in-buffer () {
     if [ -n "$1" ]; then
         local new_left=""
@@ -12,7 +11,6 @@ function insert-in-buffer () {
     fi
 }
 
-# tracking find task
 function fzf-find-task () {
     local SELECTED_TASK="$(tracking list | fzf | head -n1 | cut -d ' ' -f 1)"
     insert-in-buffer "${SELECTED_TASK}"
@@ -20,3 +18,15 @@ function fzf-find-task () {
 
 zle -N fzf-find-task
 bindkey "^P" fzf-find-task # Assign to your favorite key bind
+
+
+## Show current duration
+tracking_current() {
+  local current=$(tracking c)
+  local duration=$(echo $current | grep Duration | cut -d ' ' -f 2)
+  if [ ! -n "$duration" ]; then
+      echo "NotTracking"
+  else
+      echo "$duration"
+  fi
+}
