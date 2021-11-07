@@ -3,6 +3,8 @@
 /.**
 
 ### not ignore ###
+!/install.sh
+
 !/.zshrc
 !/.zshrc.alias
 !/.zshrc.cd
