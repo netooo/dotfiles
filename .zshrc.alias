@@ -1,5 +1,6 @@
 alias la='ls -a'
 alias ll='ls -l'
+alias lla='ls -la'
  
 alias rm='rm -i'
 alias cp='cp -i'
@@ -12,3 +13,6 @@ alias sudo='sudo '
 
 # cd で移動先をサジェスト
 alias pcd="powered_cd"
+
+# tracking
+alias tracking="~/go/src/github.com/netooo/tracking/tracking"
