@@ -11,6 +11,6 @@ fi
 
 echo "start setup..."
 cd $HOME
-for file in .zshenv .zshrc .zshrc.alias .zshrc.cd .zshrc.tracking do
-	[ ! -e $file ] && ln -s ${DOT_DIR}/$file .
+for file in ".zsh/" ".zshenv" ".zshrc" ".zshrc.alias" ".zshrc.cd" ".zshrc.tracking" do
+  [ ! -e $file ] && ln -s ${DOT_DIR}/$file .
 done
