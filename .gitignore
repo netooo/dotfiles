@@ -5,6 +5,8 @@
 ### not ignore ###
 !/install.sh
 
+!/.zsh/
+!/.zsh/**
 !/.zshrc
 !/.zshrc.alias
 !/.zshrc.cd
