@@ -4,6 +4,7 @@
 
 ### not ignore ###
 !/install.sh
+!/setup_shell.sh
 
 !/.zsh/
 !/.zsh/**
