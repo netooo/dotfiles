@@ -45,7 +45,8 @@ set listchars=tab:^\ ,trail:~
 set showmatch
 
 " クリップボードにコピー
-set clipboard=unnamed
+nnoremap <S-y> "*yy
+vnoremap <S-y> "*yy
 
 " ファイルのスプリット
 nnoremap <silent> <S-j> :split<CR>
