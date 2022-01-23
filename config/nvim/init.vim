@@ -53,6 +53,10 @@ nnoremap <silent> <S-j> :split<CR>
 nnoremap <silent> <S-l> :vsplit<CR>
 nnoremap <Bar> $:let pos = getpos(".")<CR>:call setpos('.',pos)<CR>
 
+" 単語移動
+nnoremap q   b
+vnoremap q   b
+
 " ウィンドウ移動
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
