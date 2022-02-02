@@ -20,6 +20,9 @@
 !/iterm2/
 !/iterm2/**
 
+!/jetbrains/
+!/jetbrains/**
+
 !/README.md
 !/LICENSE
 !.gitignore
