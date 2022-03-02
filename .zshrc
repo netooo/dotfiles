@@ -2,10 +2,18 @@
 #################### 設定 ####################
 # 環境変数
 export LANG=ja_JP.UTF-8
-export GOPATH=$HOME/go
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+## fzf
 export FZF_CTRL_T_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
+## mysql
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+## anyenv
+eval "$(anyenv init -)"
+## go
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$(go env GOPATH)/bin
+export GO111MODULE=on
 
 # 単語の区切り文字を指定
 autoload -Uz select-word-style
