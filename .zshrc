@@ -144,3 +144,4 @@ bindkey '^R' history-incremental-pattern-search-backward
 ##############################################
 ################ TimeTracking ################
 [ -f ~/.zshrc.tracking ] && source ~/.zshrc.tracking
+
