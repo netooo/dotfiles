@@ -28,6 +28,15 @@ fi
 if has "fzf"; then
   echo 'fzf already installed'
 else
-  echo 'install fzf shell'
+  echo 'install fzf'
   brew install fzf
+fi
+
+# zoxide
+if has "zoxide"; then
+  echo 'zoxide already installed'
+else
+  echo 'install zoxide'
+  brew install zoxide
+  rm ~/.zcompdump*; compinit
 fi
