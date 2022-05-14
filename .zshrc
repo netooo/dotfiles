@@ -9,6 +9,7 @@ export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --lin
 ## mysql
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 ## anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 ## go
 export GOPATH=$(go env GOPATH)
