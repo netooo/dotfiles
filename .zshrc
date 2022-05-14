@@ -138,10 +138,6 @@ bindkey '^R' history-incremental-pattern-search-backward
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ##############################################
-################# powered cd #################
-[ -f ~/.zshrc.cd ] && source ~/.zshrc.cd
-
-##############################################
 ################ TimeTracking ################
 [ -f ~/.zshrc.tracking ] && source ~/.zshrc.tracking
 
