@@ -12,9 +12,16 @@ export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 ## go
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$(go env GOPATH)/bin
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+export GOENV_DISABLE_GOPATH=1
+eval "$(goenv init -)"
 export GO111MODULE=on
+export PATH="$GOROOT/bin:$PATH"
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
+## zoxide
+eval "$(zoxide init zsh)"
 
 # 単語の区切り文字を指定
 autoload -Uz select-word-style
