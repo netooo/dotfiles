@@ -22,6 +22,8 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 ## zoxide
 eval "$(zoxide init zsh)"
+## bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # 単語の区切り文字を指定
 autoload -Uz select-word-style

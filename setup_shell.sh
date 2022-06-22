@@ -48,3 +48,11 @@ else
   echo 'install exa'
   brew install exa
 fi
+
+# bat
+if has "bat"; then
+  echo 'bat already installed'
+else
+  echo 'install bat'
+  brew install bat
+fi
