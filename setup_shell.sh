@@ -64,3 +64,11 @@ else
   echo 'install fd'
   brew install fd
 fi
+
+# procs
+if has "procs"; then
+  echo 'procs already installed'
+else
+  echo 'install procs'
+  brew install procs
+fi
