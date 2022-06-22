@@ -40,3 +40,11 @@ else
   brew install zoxide
   rm ~/.zcompdump*; compinit
 fi
+
+# exa
+if has "exa"; then
+  echo 'exa already installed'
+else
+  echo 'install exa'
+  brew install exa
+fi
