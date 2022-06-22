@@ -56,3 +56,11 @@ else
   echo 'install bat'
   brew install bat
 fi
+
+# fd
+if has "fd"; then
+  echo 'fd already installed'
+else
+  echo 'install fd'
+  brew install fd
+fi
