@@ -72,3 +72,11 @@ else
   echo 'install procs'
   brew install procs
 fi
+
+# ripgrep
+if has "rg"; then
+  echo 'rg already installed'
+else
+  echo 'install rg'
+  brew install rg
+fi
