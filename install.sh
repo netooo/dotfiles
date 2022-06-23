@@ -11,7 +11,7 @@ fi
 
 echo "start symbolic link..."
 cd $HOME
-for file in ".zsh/" ".zshenv" ".zshrc" ".zshrc.alias" ".zshrc.cd" ".zshrc.tracking"
+for file in ".zsh/" ".zshenv" ".zshrc" ".zshrc.alias" ".zshrc.tracking"
 do
   [ ! -e $file ] && ln -s ${DOT_DIR}/$file .
 done
