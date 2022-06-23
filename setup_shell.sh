@@ -14,7 +14,7 @@ else
   brew install zsh
 fi
 
-if [ $(echo "$SHELL") == $ZSHPATH ]; then
+if [ $(echo "$SHELL") = $ZSHPATH ]; then
   echo 'default shell already zsh'
 else
   echo 'set default shell to zsh'
