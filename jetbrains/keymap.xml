@@ -1,4 +1,8 @@
 <keymap version="1" name="keymap" parent="Mac OS X 10.5+">
+  <action id="ActivateFindToolWindow">
+    <keyboard-shortcut first-keystroke="meta 3" />
+    <keyboard-shortcut first-keystroke="ctrl f" />
+  </action>
   <action id="ActivateProjectToolWindow">
     <keyboard-shortcut first-keystroke="meta 1" />
     <keyboard-shortcut first-keystroke="ctrl n" />
@@ -9,6 +13,13 @@
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="ctrl t" />
   </action>
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="meta 9" />
+    <keyboard-shortcut first-keystroke="ctrl g" />
+  </action>
+  <action id="Annotate">
+    <keyboard-shortcut first-keystroke="ctrl j" />
+  </action>
   <action id="ChangesView.GroupBy.Directory" />
   <action id="CheckinProject">
     <keyboard-shortcut first-keystroke="ctrl k" />
@@ -17,12 +28,25 @@
   <action id="EditorDown">
     <keyboard-shortcut first-keystroke="down" />
   </action>
+  <action id="EditorRight">
+    <keyboard-shortcut first-keystroke="right" />
+  </action>
   <action id="EditorScrollToCenter" />
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="up" />
   </action>
+  <action id="Find">
+    <keyboard-shortcut first-keystroke="meta f" />
+    <keyboard-shortcut first-keystroke="meta space" />
+  </action>
+  <action id="Github.View.Pull.Request">
+    <keyboard-shortcut first-keystroke="ctrl r" />
+  </action>
   <action id="List-selectPreviousRow">
     <keyboard-shortcut first-keystroke="up" />
+  </action>
+  <action id="LocalHistory.ShowHistory">
+    <keyboard-shortcut first-keystroke="ctrl u" />
   </action>
   <action id="NavBar-selectUp">
     <keyboard-shortcut first-keystroke="up" />
@@ -42,12 +66,18 @@
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="ctrl h" />
   </action>
+  <action id="QuickJavaDoc">
+    <keyboard-shortcut first-keystroke="f1" />
+    <mouse-shortcut keystroke="control button2" />
+  </action>
   <action id="Refactorings.QuickListPopupAction" />
+  <action id="SelectNextOccurrence" />
   <action id="ServiceView.GroupByContributor" />
   <action id="ServiceView.GroupByServiceGroups" />
   <action id="Table-selectPreviousRow">
     <keyboard-shortcut first-keystroke="up" />
   </action>
+  <action id="TodoViewGroupByFlattenPackage" />
   <action id="TodoViewGroupByShowPackages" />
   <action id="Tree-selectNext">
     <keyboard-shortcut first-keystroke="down" />
@@ -60,7 +90,12 @@
   <action id="UsageGrouping.Directory" />
   <action id="UsageGrouping.FileStructure" />
   <action id="UsageGrouping.UsageType" />
+  <action id="Vcs.Log.AnnotateRevisionAction" />
+  <action id="Vcs.Log.ShowTooltip" />
   <action id="Vcs.Push">
     <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
+  <action id="Vcs.ShowHistoryForBlock">
+    <keyboard-shortcut first-keystroke="ctrl semicolon" />
   </action>
 </keymap>
