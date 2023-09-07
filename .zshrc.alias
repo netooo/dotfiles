@@ -5,8 +5,11 @@ alias lla='ls -la'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
- 
 alias mkdir='mkdir -p'
+alias e='exa -l'
+alias ea='exa -la'
+alias eat='exa -laT'
+alias et='exa -lT'
 
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
