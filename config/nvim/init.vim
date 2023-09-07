@@ -75,6 +75,9 @@ noremap <S-l>   $
 noremap <S-j>   }
 noremap <S-k>   {
 
+" ビジュアルモード内で検索
+vnoremap / <Esc>/\%V
+
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
